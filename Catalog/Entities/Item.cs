@@ -6,6 +6,7 @@ namespace Catalog.Entities
     {
         //init: only properties  C# 9:: { get; init; } init means set at intilize :: old { get; private set; }
         public Guid Id { get; init; }
+        public Guid id { get; internal set; }
         public string Name { get; init; }
         public decimal Price { get; init; }
         public DateTimeOffset CreatedDate { get; init; }

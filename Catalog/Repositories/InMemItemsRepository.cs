@@ -4,8 +4,14 @@ using System.Linq;
 using Catalog.Entities;
 namespace Catalog.Repositories
 {
-    public class InMemItemsRepository
+    // public interface IInMemItemsRepository
+    //     {
+    //         Item GetItem(Guid id);
+    //         IEnumerable<Item> GetItems();
+    //     }
+    public class InMemItemsRepository : IInMemItemsRepository
     {
+
         public class AGenericClass<T> where T : IComparable<T> { }
         //items = new List<Item>()
         private readonly List<Item> items = new()
